@@ -21,4 +21,4 @@ def createPost(request):
     context = {
         'form':form,
         }
-    return render(request, 'pages/post/create.html', context)
+    return render(request, 'post/create.html', context)

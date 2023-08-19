@@ -12,6 +12,7 @@
             <th>Title</th>
             <th>Category</th>
             <th>Author</th>
+            <th>Image</th>
             <th>Blog_post</th>
             <th>Status</th>
             <th>Created</th>
@@ -27,6 +28,9 @@
             <td>{{ post.title }}</td>
             <td>{{ post.category }}</td>
             <td>{{ post.author }}</td>
+            <td>
+                <img src="{{ post.image.url  }}" alt="">
+            </td>
             <td>{{ post.blog_post|truncatechars:50|safe }}</td>
             <td>{{ post.status }}</td>
             <td>{{ post.date_added }}</td>

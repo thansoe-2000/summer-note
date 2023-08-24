@@ -22,3 +22,12 @@ def createPost(request):
         'form':form,
         }
     return render(request, 'post/create.html', context)
+
+def detailPost(request, pk):
+    post = Post.objects.get(id=pk)
+    form = PostForm()
+    context = {
+        'post':post, 
+        'form':form
+    }
+    return render(request, 'post/detail.html', context )

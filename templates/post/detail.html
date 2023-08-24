@@ -1,0 +1,12 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+
+{{ post.title }}
+{{ post.category }}
+{{ post.status }}
+{{ post.author }}
+{{ post.blog_post|safe }}
+{{ post.date_added }}
+{{ post.date_updated }}
+
+{% endblock content %}

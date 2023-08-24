@@ -7,4 +7,5 @@ urlpatterns = [
     
     # create
     path('post/create', views.createPost, name='post.create'),
+    path('post/detail/<str:pk>/', views.detailPost, name='post.detail'),
 ]
